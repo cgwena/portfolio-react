@@ -2,10 +2,9 @@
 
 .container {
     position: relative;
-    background-color: rgba(12, 12 ,12, 0.6);
+    background-color: rgba(12, 12, 12, 0.6);
     border-radius: 15px;
-    padding: 72px;
-    margin-top: 128px;
+    padding: 120px;
     z-index: 1;
     margin-left: 10%;
     margin-right: 10%;
@@ -23,17 +22,40 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-top: 54px;
 }
 
 .aboutImg {
-    width: 35%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes floating {
+    0% {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 10px);
+    }
+    100% {
+        transform: translate(0, 0px);
+    }
+}
+
 
 .aboutItems {
     color: var(--color-text);
     display: flex;
     flex-direction: column;
     gap: 50px;
+    margin: 50px;
 }
 
 .aboutItem {
@@ -54,7 +76,7 @@
 }
 
 .aboutItem h3 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 600;
 }
 
