@@ -7,7 +7,7 @@ export const About = () => {
     return (
         <section className={styles.container} id='about'>
             <h2 className={styles.title}>Pour mieux me connaître...</h2>
-            <ReactPlayer url="/assets/hero/Gwenaelle_Bousses.mp4" controls />
+            <ReactPlayer url="https://www.youtube.com/embed/M-jG7oF6kR8?si=Y1XPsy3b0gQw700L" controls />
         </section>
     )
 }

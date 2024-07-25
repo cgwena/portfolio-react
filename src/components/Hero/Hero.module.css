@@ -187,15 +187,56 @@
     }
 
     .arrow1, .arrow2 {
-        visibility: hidden
+        display: none;
     }
 
     .flip_card_inner {
-        width: 90vw;
-        margin: -80%;
+        width: 100%;
     }
 
     .flip_card_inner h3, .flip_card_inner p {
         font-size: 24px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutItems {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aboutItem {
+        height: 100px;
+        width: 100vw;
+    }
+
+    .arrow1, .arrow2 {
+        display: none;
+    }
+
+    .flip_card_inner {
+        width: 100%;
+    }
+
+    .flip_card_inner h3, .flip_card_inner p {
+        font-size: 16px;
     }
 }

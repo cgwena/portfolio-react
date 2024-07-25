@@ -68,3 +68,9 @@
         font-size: 20px;
     }
 }
+
+@media screen and (max-width: 830px) {
+    .link a {
+        font-size: 12px;
+    }
+}
