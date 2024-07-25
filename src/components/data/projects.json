@@ -1,26 +1,25 @@
 [
-    {
-      "title": "Project A",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "title": "Project B",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node", "Sass"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    },
-    {
-      "title": "Project C",
-      "imageSrc": "projects/project.png",
-      "description": "This is a project made to learn the latest languages by building an app.",
-      "skills": ["React", "Express", "Node"],
-      "demo": "https://www.example.com",
-      "source": "https://www.github.com"
-    }
-  ]
+  {
+    "title": "Trouve ton artisan",
+    "imageSrc": "projects/trouve_ton_artisan.png",
+    "description": "Un site pour trouver un artisan avec des outils de recherche (barre, onglets).",
+    "skills": ["React", "HTML", "CSS"],
+    "demo": "https://quiet-pasca-4783e2.netlify.app",
+    "source": "https://github.com/cgwena/trouve-ton-artisan"
+  },
+  {
+    "title": "Au petit village",
+    "imageSrc": "projects/au_petit_village.png",
+    "description": "Un site de vente de figurines",
+    "skills": ["Angular", "HTML", "CSS"],
+    "demo": "https://au-petit-village.netlify.app/",
+    "source": "https://github.com/cgwena/au_petit_village"
+  },
+  {
+    "title": "Probeats",
+    "imageSrc": "projects/Probeats.png",
+    "description": "Des maquettes pour un site de e-commerce spécialisé dans le son",
+    "skills": ["Figma"],
+    "demo": "https://www.figma.com/design/RVIkEfaAvWlvMBHa18J7iy/Probeats-(1)?node-id=3-24&t=7WRRcf070QoWMkID-0"
+  }
+]
