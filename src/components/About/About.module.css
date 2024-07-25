@@ -33,24 +33,11 @@
 @media screen and (max-width: 830px) {
     .container {
         background-color: transparent;
-        padding-left: 0;
-        padding-right: 0;
+        padding: 0;
+        
     }
 
-    .content {
-        flex-direction: column;
-    }
-
-    .aboutImg {
-        display: none;
-    }
-
-    .aboutItems {
-        margin-top: 28px;
-    }
-
-    .aboutItem {
-        padding-left: 0;
-        padding-right: 0;
+    .video {
+        width: auto;
     }
 }
