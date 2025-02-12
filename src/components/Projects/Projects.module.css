@@ -5,6 +5,7 @@
     color: var(--color-text);
     margin-left: 10%;
     margin-right: 10%;
+    padding-top: 120px;
 }
 
 .title {
@@ -23,4 +24,10 @@
     justify-content: center;
     gap: 16px;
     
+}
+
+@media screen and (max-width: 830px) {
+    .container {
+        padding: 0;
+    }
 }
