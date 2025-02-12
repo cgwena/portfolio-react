@@ -8,7 +8,7 @@ export const About = () => {
         <section className={styles.container}>
             <div className={styles.content}>
                 <div>                
-                    <img className={styles.aboutImg} src={getImageUrl("about/Gwenaelle_Bousses.jpg")} alt="Me sitting with a laptop" />
+                    <img className={styles.aboutImg} src={getImageUrl("about/photo_rose.png")} alt="Me sitting with a laptop" />
                 </div>
                 <ul className={styles.aboutItems}>
                     <li className={styles.aboutItem}>
