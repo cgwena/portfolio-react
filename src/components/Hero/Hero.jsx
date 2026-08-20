@@ -1,64 +1,71 @@
 import React from 'react'
-import { getImageUrl } from '../../utils'
-
 import styles from './Hero.module.css'
 
 export const Hero = () => {
     return (
         <section className={styles.container}>
             <div className={styles.content}>
-                <h1 className={styles.title}>Hi, I'm Gwenaëlle</h1>
-                <div className={styles.about}>
-                    <img className={styles.aboutImg} src={getImageUrl("about/Gwenaelle_Bousses.jpg")} alt="Me sitting with a laptop" />
-                    <ul className={styles.aboutItems}>
-                        <li className={styles.aboutItem}>
-                            <div className={styles.flip_card_inner}>
-                                <div className={styles.flip_card_front}>
-                                    <img className={styles.arrow1} src={getImageUrl("about/arrow_white.svg")} alt="" />
-                                    <img className={styles.logo} src={getImageUrl("about/cursorIcon.png")} alt="Cursor Icon" />
-                                    <div className={styles.cardText}>
-                                        <h3>Développeuse Front-End</h3>
-                                        <p>Je construis des sites optimisés et adaptés à tous les formats.</p>
-                                    </div>
-                                </div>
-                                <div className={styles.flip_card_back}>
-                                    <img className={styles.logo} src={getImageUrl("skills/html.png")} alt="logo html" />
-                                    <img className={styles.logo} src={getImageUrl("skills/css.png")} alt="logo css" />
-                                    <img className={styles.logo} src={getImageUrl("skills/js.png")} alt="logo javascript" />
-                                    <img className={styles.logo} src={getImageUrl("skills/react.png")} alt="logo react" />
-                                    <img className={styles.logo} src={getImageUrl("skills/angular.png")} alt="logo html" />
-                                    <img className={styles.logo} src={getImageUrl("skills/figma.png")} alt="logo figma" />
-                                </div>
-                            </div>
-                        </li>
-
-                        <li className={styles.aboutItem}>
-                            <div className={styles.flip_card_inner}>
-                                <div className={styles.flip_card_front}>
-                                    <img className={styles.arrow2} src={getImageUrl("about/arrow_white.svg")} alt="" />
-                                    <img src={getImageUrl("about/serverIcon.png")} alt="Server Icon" />
-
-                                    <div className={styles.cardText}>
-                                        <h3>Développeuse Back-End</h3>
-                                        <p>Je sais construire et gérer des bases de données et des APIs sécurisées.</p>
-                                    </div>
-                                </div>
-                                <div className={styles.flip_card_back}>
-                                    <img className={styles.logo} src={getImageUrl("skills/python.png")} alt="logo python" />
-                                    <img className={styles.logo} src={getImageUrl("skills/mongodb.png")} alt="logo mongodb" />
-                                    <img className={styles.logo} src={getImageUrl("skills/node.png")} alt="logo node.js" />
-                                    <img className={styles.logo} src={getImageUrl("skills/php.png")} alt="logo php" />
-                                    <img className={styles.logo} src={getImageUrl("skills/mysql.png")} alt="logo mysql" />
-
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
+                <div className={styles.heroText}>
+                    <div>
+                        <h1 className={styles.title}>
+                            Structurer, analyser et présenter les données.
+                        </h1>
+                        <p className={styles.description}>
+                            De la fiabilisation des bases de données à la création de tableaux de bord interactifs pour piloter vos décisions métiers.
+                        </p>
+                    </div>
                 </div>
-                <a className={styles.contactBtn} href="mailto:cgenaelle@hotmail.com">Contactez-moi !</a>
 
+                <div className={styles.actionContainer}>
+                    <a
+                        href="/CV_Gwenaelle_Bousses.pdf"
+                        download="CV_Gwenaelle_Bousses.pdf"
+                        className={styles.cvButton}
+                    >
+                        Télécharger mon CV
+                    </a>
+                </div>
+
+                <div className={styles.pillars}>
+                    {/* Pilier 1 */}
+                    <div className={styles.pillar}>
+                        <img className={styles.pillarIcon} src="assets/about/structurer.png" alt="structurer" title="structurer" />
+                        <h3>1. Structurer</h3>
+                        <p>
+                            Création de pipelines de données robustes, nettoyage et modélisation (ETL/ELT) pour garantir la qualité de l'information.
+                        </p>
+                        <div className={styles.toolsIconContainer}>
+                            <img className={styles.toolIcon} src="assets/about/python.png" alt="Python" title="Python" />
+                            <img className={styles.toolIcon} src="assets/about/sql.svg" alt="SQL" title="SQL" />
+                            <img className={styles.toolIcon} src="assets/about/dbt.svg" alt="dbt" title="dbt" />
+                        </div>
+                    </div>
+                    {/* Pilier 2 */}
+                    <div className={styles.pillar}>
+                        <img className={styles.pillarIcon} src="assets/about/analyser.png" alt="Analyser" title="Analyser" />
+                        <h3>2. Analyser</h3>
+                        <p>
+                            Exploration approfondie des jeux de données et modélisation statistique pour en extraire des modèles exploitables.
+                        </p>
+                        <div className={styles.toolsIconContainer}>
+                            <img className={styles.toolIcon} src="assets/about/pandas.svg" alt="Pandas" title="Pandas" />
+                            <img className={styles.toolIcon} src="assets/about/r.svg" alt="R" title="R" />
+                        </div>
+                    </div>
+
+                    {/* Pilier 3 */}
+                    <div className={styles.pillar}>
+                        <img className={styles.pillarIcon} src="assets/about/visualiser.png" alt="Visualiser" title="Visualiser" />
+                        <h3>3. Visualiser</h3>
+                        <p>
+                            Conception de rapports clairs et ergonomiques, restitution d'indicateurs de performance clés (KPIs) orientés utilisateurs.
+                        </p>
+                        <div className={styles.toolsIconContainer}>
+                            <img className={styles.toolIcon} src="assets/about/powerbi.svg" alt="Power BI" title="Power BI" />
+                        </div>
+                    </div>
+                </div>
             </div>
-
-        </section >
+        </section>
     )
 }
