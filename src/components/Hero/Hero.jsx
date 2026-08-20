@@ -29,27 +29,27 @@ export const Hero = () => {
                 <div className={styles.pillars}>
                     {/* Pilier 1 */}
                     <div className={styles.pillar}>
-                        <img className={styles.pillarIcon} src="assets/about/structurer.png" alt="structurer" title="structurer" />
+                        <img className={styles.pillarIcon} src="/assets/about/structurer.png" alt="structurer" title="structurer" />
                         <h3>1. Structurer</h3>
                         <p>
                             Création de pipelines de données robustes, nettoyage et modélisation (ETL/ELT) pour garantir la qualité de l'information.
                         </p>
                         <div className={styles.toolsIconContainer}>
-                            <img className={styles.toolIcon} src="assets/about/python.png" alt="Python" title="Python" />
-                            <img className={styles.toolIcon} src="assets/about/sql.svg" alt="SQL" title="SQL" />
-                            <img className={styles.toolIcon} src="assets/about/dbt.svg" alt="dbt" title="dbt" />
+                            <img className={styles.toolIcon} src="/assets/about/python.png" alt="Python" title="Python" />
+                            <img className={styles.toolIcon} src="/assets/about/sql.svg" alt="SQL" title="SQL" />
+                            <img className={styles.toolIcon} src="/assets/about/dbt.svg" alt="dbt" title="dbt" />
                         </div>
                     </div>
                     {/* Pilier 2 */}
                     <div className={styles.pillar}>
-                        <img className={styles.pillarIcon} src="assets/about/analyser.png" alt="Analyser" title="Analyser" />
+                        <img className={styles.pillarIcon} src="/assets/about/analyser.png" alt="Analyser" title="Analyser" />
                         <h3>2. Analyser</h3>
                         <p>
                             Exploration approfondie des jeux de données et modélisation statistique pour en extraire des modèles exploitables.
                         </p>
                         <div className={styles.toolsIconContainer}>
-                            <img className={styles.toolIcon} src="assets/about/pandas.svg" alt="Pandas" title="Pandas" />
-                            <img className={styles.toolIcon} src="assets/about/r.svg" alt="R" title="R" />
+                            <img className={styles.toolIcon} src="/assets/about/pandas.svg" alt="Pandas" title="Pandas" />
+                            <img className={styles.toolIcon} src="/assets/about/r.svg" alt="R" title="R" />
                         </div>
                     </div>
 
