@@ -1,12 +1,13 @@
 import React from 'react'
 import styles from "./About.module.css"
+import { getImageUrl } from '../../utils'
 
 export const About = () => {
     return (
         <section className={styles.container}>
             <div className={styles.content}>
                 <div>                
-                    <img className={styles.aboutImg} src={getImageUrl("about/photo_rose.png")} alt="Me sitting with a laptop" />
+                    <img className={styles.aboutImg} src={getImageUrl("about/Gwenaelle_Bousses.png")} alt="Me" />
                 </div>
                 <ul className={styles.aboutItems}>
                     <li className={styles.aboutItem}>
