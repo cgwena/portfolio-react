@@ -31,39 +31,39 @@ export const Hero = () => {
                 <div className={styles.pillars}>
                     {/* Pilier 1 */}
                     <div className={styles.pillar}>
-                        <img className={styles.pillarIcon} src={getImageUrl("/about/structurer.png")} alt="structurer" title="structurer" />
+                        <img className={styles.pillarIcon} src={getImageUrl("about/structurer.png")} alt="structurer" title="structurer" />
                         <h3>1. Structurer</h3>
                         <p>
                             Création de pipelines de données robustes, nettoyage et modélisation (ETL/ELT) pour garantir la qualité de l'information.
                         </p>
                         <div className={styles.toolsIconContainer}>
-                            <img className={styles.toolIcon} src={getImageUrl("/about/python.png")} alt="Python" title="Python" />
-                            <img className={styles.toolIcon} src={getImageUrl("/about/sql.svg")} alt="SQL" title="SQL" />
-                            <img className={styles.toolIcon} src={getImageUrl("/about/dbt.svg")} alt="dbt" title="dbt" />
+                            <img className={styles.toolIcon} src={getImageUrl("about/python.png")} alt="Python" title="Python" />
+                            <img className={styles.toolIcon} src={getImageUrl("about/sql.svg")} alt="SQL" title="SQL" />
+                            <img className={styles.toolIcon} src={getImageUrl("about/dbt.svg")} alt="dbt" title="dbt" />
                         </div>
                     </div>
                     {/* Pilier 2 */}
                     <div className={styles.pillar}>
-                        <img className={styles.pillarIcon} src={getImageUrl("/about/analyser.png")} alt="Analyser" title="Analyser" />
+                        <img className={styles.pillarIcon} src={getImageUrl("about/analyser.png")} alt="Analyser" title="Analyser" />
                         <h3>2. Analyser</h3>
                         <p>
                             Exploration approfondie des jeux de données et modélisation statistique pour en extraire des modèles exploitables.
                         </p>
                         <div className={styles.toolsIconContainer}>
-                            <img className={styles.toolIcon} src={getImageUrl("/about/pandas.svg")} alt="Pandas" title="Pandas" />
-                            <img className={styles.toolIcon} src={getImageUrl("/about/r.svg")} alt="R" title="R" />
+                            <img className={styles.toolIcon} src={getImageUrl("about/pandas.svg")} alt="Pandas" title="Pandas" />
+                            <img className={styles.toolIcon} src={getImageUrl("about/r.svg")} alt="R" title="R" />
                         </div>
                     </div>
 
                     {/* Pilier 3 */}
                     <div className={styles.pillar}>
-                        <img className={styles.pillarIcon} src={getImageUrl("/about/visualiser.png")} alt="Visualiser" title="Visualiser" />
+                        <img className={styles.pillarIcon} src={getImageUrl("about/visualiser.png")} alt="Visualiser" title="Visualiser" />
                         <h3>3. Visualiser</h3>
                         <p>
                             Conception de rapports clairs et ergonomiques, restitution d'indicateurs de performance clés (KPIs) orientés utilisateurs.
                         </p>
                         <div className={styles.toolsIconContainer}>
-                            <img className={styles.toolIcon} src={getImageUrl("/about/powerbi.svg")} alt="Power BI" title="Power BI" />
+                            <img className={styles.toolIcon} src={getImageUrl("about/powerbi.svg")} alt="Power BI" title="Power BI" />
                         </div>
                     </div>
                 </div>

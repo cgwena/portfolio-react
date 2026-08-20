@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from "./About.module.css"
+import { getImageUrl } from '../../utils'
 
 export const About = () => {
     return (
@@ -8,7 +9,7 @@ export const About = () => {
             <div className={styles.content}>
                 <img
                     className={styles.aboutImg}
-                    src="assets/about/Gwenaelle_Bousses.png"
+                    src={getImageUrl("about/gwenaelle_bousses.jpg")}
                     alt="Gwenaëlle Boussès - Data Analyst"
                 />
                 <div className={styles.textContent}>
