@@ -1,33 +1,129 @@
 @import "../../vars.css";
 
 .container {
-    margin-top: 72px;
-    color: var(--color-text);
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-top: 120px;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.header {
+    margin-left: 10%; 
+    margin-bottom: 40px;
 }
 
 .title {
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: 1.75px;
-    text-transform: uppercase;
+    color: var(--color-text);
+    font-size: 48px;
+    font-weight: 800;
+    font-family: var(--font-roboto);
 }
 
-.projects {
-    margin-top: 32px;
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 0; 
+}
+
+/* La carte projet */
+.card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Format rectangle classique, vous pouvez mettre 1 / 1 pour du carré */
+    overflow: hidden; /* Empêche l'image de dépasser si on fait un effet de zoom */
+    background-color: var(--color-bg); /* Couleur de fond au chargement */
+}
+
+/* L'image du projet */
+.projectImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease; /* Pour un petit effet de zoom doux au survol */
+}
+
+/* L'overlay sombre avec le texte (caché par défaut) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(65,82,72, 0.9); 
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    gap: 16px;
-    
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    opacity: 0;
+    transition: opacity 0.4s ease; 
+    cursor: pointer;
 }
 
-@media screen and (max-width: 830px) {
-    .container {
-        padding: 0;
+.card:hover .overlay {
+    opacity: 1;
+}
+
+.card:hover .projectImage {
+    transform: scale(1.05);
+}
+
+.projectTitle {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: var(--font-roboto);
+    margin-bottom: 12px;
+    transform: translateY(20px); /* Part légèrement d'en bas */
+    transition: transform 0.4s ease;
+}
+
+.projectDescription {
+    color: #cccccc;
+    font-size: 16px;
+    font-family: var(--font-roboto);
+    margin-bottom: 20px;
+    max-width: 80%;
+    transform: translateY(20px);
+    transition: transform 0.4s ease;
+}
+
+.card:hover .projectTitle,
+.card:hover .projectDescription {
+    transform: translateY(0);
+}
+
+.tools {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.toolBadge {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: var(--font-roboto);
+}
+
+@media screen and (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr; /* 1 seule colonne sur mobile */
+    }
+    
+    .overlay {
+        /* Sur mobile, il n'y a pas vraiment de "survol" (hover), 
+           on peut choisir de laisser le texte toujours un peu visible 
+           ou de compter sur le premier "tap" de l'utilisateur */
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.6);
+    }
+    
+    .projectTitle, .projectDescription {
+        transform: translateY(0);
     }
 }

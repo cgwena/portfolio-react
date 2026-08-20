@@ -3,12 +3,23 @@
 .navbar {
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: transform 0.3s ease-in-out;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 10%;
-    z-index: 2;
-    background-color: var(--color-secondary);
+    
+    background-color: var(--color-bg);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.05)
+}
+
+.hidden {
+    transform: translateY(-100%);
 }
     
 .title {

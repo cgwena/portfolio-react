@@ -26,27 +26,565 @@
   ]
 =======
   {
-    "title": "Trouve ton artisan",
-    "imageSrc": "projects/trouve_ton_artisan.png",
-    "description": "Un site pour trouver un artisan avec des outils de recherche (barre, onglets).",
-    "skills": ["React", "HTML", "CSS"],
-    "demo": "https://quiet-pasca-4783e2.netlify.app",
-    "source": "https://github.com/cgwena/trouve-ton-artisan"
+    "id": "1",
+    "title": "Analyse stratégique et Data Visualisation",
+    "description": "Analyse stratégique des ventes avec présentation orientée storytelling pour la direction. Conception d'un tableau de bord opérationnel, dynamique et accessible pour le suivi client.",
+    "image": "projects/projet1.jpeg",
+    "tools": [
+      "Excel",
+      "PowerPoint"
+    ],
+    "details": {
+      "context": {
+        "title": "1. Contexte et besoin métier",
+        "intro": "Le projet s'est déroulé au sein du service marketing du Grand Marché (LGM), une entreprise de grande distribution e-commerce livrant à domicile. La mission répondait à un double besoin analytique :",
+        "items": [
+          "**Vision Macro (Direction) :** Expliquer à la direction, lors d'une présentation mensuelle concise (5 diapositives maximum), l'origine d'une baisse récente du chiffre d'affaires et proposer un nouvel axe stratégique.",
+          "**Vision Micro (Opérationnel) :** Assister le pôle marketing en mettant à jour et en automatisant un tableau de bord mensuel sur Excel dédié au suivi des clients affiliés."
+        ]
+      },
+      "data": {
+        "title": "2. Données : sources et qualité",
+        "text": "L'analyse reposait sur les données de ventes, le trafic du site web et les comportements d'achat des clients (temps passé, taux de conversion, montants des paniers). Le défi principal consistait à faire le tri parmi une multitude de graphiques générés automatiquement par script, afin de ne conserver que les cinq visualisations les plus pertinentes pour construire un récit compréhensible par des non-initiés à la data."
+      },
+      "methodology": {
+        "title": "3. Démarche et outils",
+        "items": [
+          "**Storytelling et analyse stratégique :** À l'aide de 5 graphiques clés, j'ai structuré un récit mettant d'abord en évidence le paradoxe de la situation : une forte augmentation du nombre de ventes croisée à un chiffre d'affaires qui stagne, voire qui baisse. J'ai ensuite exploré l'entonnoir de conversion pour démontrer que le taux de conversion s'effondrait (passant de 11% à 5%).",
+          "**Tableau de bord Excel :** J'ai complété la trame d'analyse de février en créant un tableau de synthèse par client (achats et chiffre d'affaires). J'ai également conçu 5 graphiques (dont une infographie) en respectant rigoureusement les normes d'accessibilité."
+        ]
+      },
+      "results": {
+        "title": "4. Résultats et recommandations",
+        "intro": "L'analyse des graphiques a permis de cibler la source du problème : le temps passé sur le site (qui est fortement corrélé au montant du panier moyen) était en chute libre, suggérant un problème d'expérience client (UX). De plus, suite au changement de stratégie (arrêt du segment High-Tech), l'étude a prouvé que la catégorie \"nourriture\" devenait le véritable moteur de croissance de l'entreprise.",
+        "items": [
+          "**Recommandation stratégique :** L'axe proposé à la direction a été de concentrer les efforts techniques sur l'amélioration de l'expérience utilisateur du site web pour restaurer le taux de conversion, tout en misant commercialement sur le segment alimentaire en pleine explosion.",
+          "**Livrable opérationnel :** Le pôle marketing a reçu un tableau de bord Excel dynamique, accessible et documenté (formules apparentes) pour pérenniser son suivi des clients affiliés."
+        ]
+      },
+      "limites": {
+        "title": "5. Limites et prochaines pistes",
+        "intro": "Bien que l'analyse ait permis de réorienter la stratégie, le périmètre technique et les données disponibles présentaient certains freins :",
+        "items": [
+          "**Limites :** L'analyse repose sur des données macro et des graphiques pré-générés. Si la corrélation avec une dégradation de l'UX est avérée, les données actuelles ne permettent pas de cibler les points de friction exacts sur le site (ex: page d'accueil, tunnel de paiement). De plus, le tableau de bord Excel nécessite une manipulation manuelle récurrente pour l'import des données.",
+          "**Prochaines pistes :** Collecter des données de web analytics plus granulaires (taux de rebond par page, cartes de chaleur) pour orienter le travail des développeurs web. À moyen terme, il serait pertinent de migrer le suivi opérationnel d'Excel vers un outil de Business Intelligence (comme Power BI) connecté directement à la base de données pour un rafraîchissement automatisé."
+        ]
+      }
+    }
   },
   {
-    "title": "Au petit village",
-    "imageSrc": "projects/au_petit_village.png",
-    "description": "Un site de vente de figurines",
-    "skills": ["Angular", "HTML", "CSS"],
-    "demo": "https://au-petit-village.netlify.app/",
-    "source": "https://github.com/cgwena/au_petit_village"
+    "id": "2",
+    "title": "Conception de base de données et analyse SQL",
+    "description": "Modélisation et implémentation d'une base de données relationnelle pour le secteur de l'assurance. Analyse du marché via la rédaction de requêtes SQL complexes.",
+    "image": "projects/projet2.jpeg",
+    "tools": [
+      "SQL",
+      "MySQL Workbench",
+      "Modélisation relationnelle"
+    ],
+    "details": {
+      "context": {
+        "title": "1. Contexte et besoin métier",
+        "intro": "L'objectif de ce projet était d'accompagner une entreprise d'assurance habitation dans l'analyse de son marché. La mission consistait à construire l'architecture de stockage des données en amont, afin de pouvoir ensuite l'interroger efficacement pour en tirer des informations décisionnelles.",
+        "items": [
+          "**Compréhension de la donnée brute :** Partir de fichiers CSV (contrats clients et référentiel géographique) pour structurer l'information.",
+          "**Conception et Modélisation :** Créer un schéma relationnel normalisé pour garantir l'intégrité et l'évolutivité de la base.",
+          "**Analyse SQL :** Extraire des indicateurs clés (prix moyens, répartition régionale, classements) via des requêtes complexes."
+        ]
+      },
+      "data": {
+        "title": "2. Données : sources et qualité",
+        "text": "Le projet s'appuyait sur deux sources principales : un fichier de contrats clients (informations sur les logements, formules, cotisations) et un référentiel géographique (Data.gouv.fr) détaillant le découpage territorial français. Un travail minutieux a été réalisé via un Dictionnaire de Données pour définir les types de variables (INT, VARCHAR, ENUM), les tailles et les contraintes (Clés Primaires/Étrangères), étape indispensable pour assurer la qualité de la base."
+      },
+      "methodology": {
+        "title": "3. Démarche et outils",
+        "items": [
+          "**Modélisation Logique des Données (MLD/MPD) :** Création du schéma relationnel liant les contrats aux régions géographiques, en respectant les principes de normalisation.",
+          "**Implémentation avec MySQL Workbench :** Création de l'architecture physique de la base de données (tables `Contrat` et `Region`) et importation sécurisée de plus de 30 000 lignes de données issues des CSV.",
+          "**Requêtage SQL :** Rédaction d'une série de 12 requêtes croissantes en complexité. Utilisation des jointures (`JOIN`), des fonctions d'agrégation (`COUNT`, `AVG`), des regroupements (`GROUP BY`) et des tris (`ORDER BY`) pour croiser les données contractuelles et géographiques."
+        ]
+      },
+      "results": {
+        "title": "4. Résultats et recommandations",
+        "intro": "L'architecture mise en place a permis d'exploiter la donnée brute de manière performante. Les requêtes SQL ont mis en lumière plusieurs dynamiques du marché de l'assurance habitation :",
+        "items": [
+          "**Indicateurs financiers :** Détermination du prix moyen des cotisations mensuelles (environ 19,30€) et établissement du Top 10 des départements les plus chers (Paris en tête à 36,40€).",
+          "**Cartographie du marché :** Analyse de la répartition des contrats par région, révélant une très forte concentration en Île-de-France (plus de 14 000 contrats).",
+          "**Validation technique :** Ce projet démontre qu'une modélisation rigoureuse en amont est la clé pour réaliser des analyses fiables et rapides en aval."
+        ]
+      },
+      "limites": {
+        "title": "5. Limites et prochaines pistes",
+        "intro": "Bien que l'architecture relationnelle réponde parfaitement aux besoins d'interrogation actuels, le processus d'alimentation et le périmètre d'analyse présentent certaines limites :",
+        "items": [
+          "**Limites :** L'alimentation de la base s'est faite via un import statique (one-shot) des fichiers CSV, ce qui n'est pas viable en production. Par ailleurs, les données représentent une photographie à un instant T, l'absence de dimension temporelle (historisation) empêche d'analyser l'évolution des cotisations au fil des années.",
+          "**Prochaines pistes :** Sur le plan technique, il faudrait concevoir un pipeline automatisé (ETL/ELT) pour ingérer les nouveaux contrats quotidiennement. Sur le plan analytique, il serait très pertinent d'enrichir ce modèle avec des données externes ouvertes (risques climatiques, taux de cambriolage par département) afin de justifier les fortes disparités tarifaires observées (comme les 36,40€ à Paris)."
+        ]
+      }
+    }
   },
   {
-    "title": "Probeats",
-    "imageSrc": "projects/Probeats.png",
-    "description": "Des maquettes pour un site de e-commerce spécialisé dans le son",
-    "skills": ["Figma"],
-    "demo": "https://www.figma.com/design/RVIkEfaAvWlvMBHa18J7iy/Probeats-(1)?node-id=3-24&t=7WRRcf070QoWMkID-0"
+    "id": "3",
+    "title": "Analyse exploratoire de données avec Python",
+    "description": "Nettoyage, manipulation et analyse exploratoire de données sur la sous-nutrition mondiale. Croisement de sources complexes et data visualisation.",
+    "image": "projects/projet3.jpeg",
+    "tools": [
+      "Python",
+      "Pandas",
+      "Matplotlib",
+      "Seaborn"
+    ],
+    "details": {
+      "context": {
+        "title": "1. Contexte et besoin métier",
+        "intro": "Ce projet a été réalisé dans le cadre d'une intégration fictive au sein d'une équipe de chercheurs de la FAO (Food and Agriculture Organization of the United Nations). L'objectif principal de l'équipe était de mener une étude de grande ampleur sur le thème de l'alimentation et de la sous-nutrition dans le monde.",
+        "items": [
+          "**Périmètre de l'étude :** Analyser les données historiques mondiales sur une période spécifique allant de 2013 à 2017.",
+          "**Enjeu analytique :** Comprendre les mécanismes complexes de la faim dans le monde et croiser différentes thématiques pour révéler la réalité du système alimentaire mondial."
+        ]
+      },
+      "data": {
+        "title": "2. Données : sources et qualité",
+        "text": "L'analyse a nécessité l'exploitation et le croisement de quatre jeux de données distincts issus de la base Open Data FAOSTAT : la disponibilité alimentaire, l'insécurité alimentaire, la démographie (population) et l'aide alimentaire."
+      },
+      "methodology": {
+        "title": "3. Démarche et outils",
+        "items": [
+          "**Nettoyage et standardisation :** Préparation des données brutes via Python et la librairie Pandas pour assurer la fiabilité de l'étude.",
+          "**Manipulation de données :** Croisement des différents tableaux de données par le biais d'opérations complexes (jointures, tris) pour lier la démographie à la disponibilité et aux aides.",
+          "**Visualisation :** Création de graphiques (Matplotlib, Seaborn) pour mettre en évidence les corrélations, comme le lien entre le taux de sous-nutrition et la disponibilité alimentaire."
+        ]
+      },
+      "results": {
+        "title": "4. Résultats et recommandations",
+        "intro": "L'exploration des données a mis en lumière un paradoxe frappant concernant la sécurité alimentaire mondiale :",
+        "items": [
+          "**Le paradoxe de l'abondance :** En 2017, bien que 7,10 % de la population mondiale (soit 535,7 millions de personnes) souffrait de sous-nutrition, la production globale était suffisante pour nourrir 132 % de l'humanité (plus de 9,9 milliards de personnes sur la base d'un besoin de 2 100 kcal/j/pers).",
+          "**Répartition des ressources :** L'étude a souligné que 13,22 % de la disponibilité alimentaire est allouée aux animaux, une part importante des principales céréales (notamment le maïs) nourrissant le bétail avant les humains.",
+          "**Identification des zones critiques :** Mise en évidence des pays souffrant le plus de sous-nutrition (Haïti, République populaire démocratique de Corée, Madagascar) et analyse de la distribution de l'aide internationale.",
+          "**Conclusion stratégique :** L’enjeu de demain n’est pas de produire plus de nourriture, mais d'optimiser sa répartition et de réduire les pertes à l'échelle mondiale."
+        ]
+      },
+      "limites": {
+        "title": "5. Limites et prochaines pistes",
+        "intro": "Bien que cette analyse exploratoire mette en lumière des déséquilibres structurels majeurs, elle se heurte à certains biais inhérents à la nature des données macroéconomiques mondiales :",
+        "items": [
+          "**Limites :** La fiabilité des résultats dépend des déclarations des pays membres. Les données comportent notamment des valeurs manquantes pour certains pays en situation de conflit ou d'instabilité politique, là où l'insécurité alimentaire est paradoxalement la plus critique. De plus, l'étude s'arrête en 2017, ne captant pas les bouleversements récents de la chaîne d'approvisionnement mondiale.",
+          "**Prochaines pistes :** Pour dynamiser l'analyse, il serait pertinent de se connecter directement à l'API de FAOSTAT pour automatiser la récupération des données les plus récentes. Une étape d'analyse croisée pourrait également être envisagée en intégrant des indicateurs externes (données climatiques ou géopolitiques) pour mieux comprendre et anticiper les crises locales."
+        ]
+      }
+    }
+  },
+  {
+    "id": "4",
+    "title": "Conception d'une base de données immobilière et analyses SQL",
+    "description": "Modélisation d'une base de données (3NF) à partir de sources Open Data et exploitation via des requêtes SQL complexes pour l'analyse du marché immobilier.",
+    "image": "projects/projet4.jpeg",
+    "tools": [
+      "SQL",
+      "Modélisation 3NF",
+      "Open Data",
+      "Conformité RGPD"
+    ],
+    "details": {
+      "context": {
+        "title": "1. Contexte et besoin métier",
+        "intro": "Le projet \"DATAImmo\" a été réalisé pour Laplace Immo, un réseau national d'agences immobilières. L'objectif stratégique était de poser les fondations d'un modèle prédictif des prix immobiliers pour démarquer l'agence de la concurrence. La mission répondait à deux besoins majeurs :",
+        "items": [
+          "**Création d'une base de données centralisée :** Modifier et adapter l'architecture de données existante pour collecter l'ensemble des transactions immobilières et foncières françaises de manière structurée.",
+          "**Analyse du marché :** Fournir des indicateurs clés et des analyses chiffrées aux agences régionales pour les aider à mieux accompagner leurs clients."
+        ]
+      },
+      "data": {
+        "title": "2. Données : sources et conformité RGPD",
+        "text": "L'analyse a nécessité le croisement de trois sources massives en Open Data : les Demandes de Valeurs Foncières (DVF) pour l'historique des ventes, les données de l'INSEE pour la démographie (recensement de la population), et Data.gouv pour le référentiel géographique français. Un point d'honneur a été mis sur la stratégie de sauvegarde et la conformité RGPD : utilisation exclusive de données publiques anonymisées (aucun nom de propriétaire), stockage sécurisé et application stricte du principe de minimisation des données."
+      },
+      "methodology": {
+        "title": "3. Démarche et outils",
+        "items": [
+          "**Dictionnaire et Modélisation 3NF :** Rédaction d'un dictionnaire de données exhaustif et conception d'un schéma relationnel normalisé en 3ème Forme Normale (3NF) pour éviter les redondances (par exemple, création d'une clé de concaténation code département / code commune).",
+          "**Implémentation de la Base de Données :** Création des différentes entités (Bien, Vente, Commune, Département, Région) et importation sécurisée de plusieurs dizaines de milliers de lignes de données (plus de 34 000 ventes et 34 991 communes).",
+          "**Analyses SQL Avancées :** Rédaction de 12 requêtes complexes impliquant des jointures multiples (JOIN), des sous-requêtes, et des fonctions mathématiques et d'agrégation (COUNT, AVG, ROUND) pour extraire des insights métiers."
+        ]
+      },
+      "results": {
+        "title": "4. Résultats et recommandations",
+        "intro": "La base de données, pleinement opérationnelle, a permis d'extraire des analyses stratégiques majeures sur le marché immobilier au 1er semestre 2020 :",
+        "items": [
+          "**Dynamique régionale :** L'Île-de-France domine largement le marché avec près de 14 000 ventes d'appartements, suivie de la région Provence-Alpes-Côte d'Azur.",
+          "**Valorisation immobilière :** Identification précise des prix au mètre carré, avec le Top 10 des départements les plus chers (Paris en tête à 12 083,67 €/m²) et le calcul du prix moyen d'une maison en Île-de-France (3 764,39 €/m²).",
+          "**Comportement d'achat :** Mise en évidence que les appartements de 2 et 3 pièces représentent près de 60 % des ventes, avec un écart de prix au mètre carré de -12,8 % entre ces deux typologies."
+        ]
+      },
+      "limites": {
+        "title": "5. Limites et prochaines pistes",
+        "intro": "Bien que la base relationnelle soit robuste et performante, l'exploitation des données DVF à des fins prédictives comporte des biais intrinsèques qu'il est crucial d'identifier :",
+        "items": [
+          "**Limites :** Les données DVF manquent de granularité qualitative. Elles n'indiquent ni l'état général du bien (travaux à prévoir), ni l'étage, ni son diagnostic de performance énergétique (DPE), des facteurs pourtant déterminants dans la valorisation d'un bien. De plus, les données analysées se concentrant sur le 1er semestre 2020, elles reflètent une période de marché atypique marquée par les premiers confinements.",
+          "**Prochaines pistes :** Pour aboutir au modèle prédictif souhaité par Laplace Immo, il serait indispensable d'enrichir cette base avec des données externes : géospatiales (proximité des transports, écoles) et environnementales (notes DPE). Techniquement, la mise en place d'un pipeline ETL automatisé permettrait d'ingérer les nouvelles publications DVF semestrielles du gouvernement sans intervention manuelle."
+        ]
+      }
+    }
+  },
+  {
+    "id": "5",
+    "title": "Nettoyage de données et analyse statistique",
+    "description": "Rapprochement de bases de données hétérogènes (ERP et E-commerce), nettoyage approfondi avec Python et analyse statistique des ventes (Pareto, détection d'outliers).",
+    "image": "projects/projet5.jpeg",
+    "tools": [
+      "Python",
+      "Pandas",
+      "Data Cleaning",
+      "Statistiques descriptives"
+    ],
+    "details": {
+      "context": {
+        "title": "1. Contexte et besoin métier",
+        "intro": "La mission s'est déroulée au sein de Bottleneck, un prestigieux marchand de vin, avec pour objectif de moderniser des processus d'analyse artisanaux et d'optimiser une gestion des stocks complexe. Le projet s'est articulé autour de deux axes majeurs :",
+        "items": [
+          "**Phase 1 (Préparation) :** Agréger et fiabiliser différents fichiers hétérogènes afin de rendre les données exploitables.",
+          "**Phase 2 (Analyse Stratégique) :** Réaliser des analyses statistiques orientées métier (CA, marges, stocks) pour une présentation synthétique au CODIR."
+        ]
+      },
+      "data": {
+        "title": "2. Données : sources et qualité",
+        "text": "L'analyse reposait sur trois extractions distinctes : une base ERP de 825 éléments (références, prix, stock), un export du site Web contenant 1 513 éléments (SKU, quantités vendues), et une table de liaison de 825 éléments. L'exploration a révélé une forte dette technique avec de multiples anomalies : erreurs de types sur les SKU, doublons (deux lignes par produit sur le web), données manquantes, incohérences entre le statut et la quantité en stock, ainsi que des prix ou marges négatifs. Il a également fallu justifier les choix de traitement dans le respect de la conformité RGPD."
+      },
+      "methodology": {
+        "title": "3. Démarche et outils",
+        "items": [
+          "**Fusion des bases (Pandas) :** Consolidation des données via la clé `product_id` pour joindre l'ERP et la table de liaison, puis réalisation de jointures externes (avec `id_web`) pour intégrer les données e-commerce sans perte d'information.",
+          "**Nettoyage (Data Cleaning) :** Identification et correction systématique des 8 types d'erreurs (saisie, jointure, cohérence, etc.) pour obtenir une base saine.",
+          "**Analyse univariée et détection d'Outliers :** Utilisation de l'intervalle interquartile et de boxplots pour analyser la distribution des prix. 36 valeurs ont dépassé le seuil, mais l'analyse métier a confirmé qu'il s'agissait de \"produits d'exception\" et non d'erreurs.",
+          "**Analyse de corrélations :** Étude multivariée pour évaluer l'impact du prix sur les ventes et vérifier l'adéquation entre les volumes de ventes et les quantités stockées."
+        ]
+      },
+      "results": {
+        "title": "4. Résultats et recommandations",
+        "intro": "L'analyse a permis d'établir un bilan clair de l'activité du mois d'octobre (143 449 € de CA et une valorisation des stocks de 298 321,76 € pour 17 799 produits) et de proposer des axes d'amélioration techniques :",
+        "items": [
+          "**Loi de Pareto et Marges :** 432 articles génèrent 80 % du chiffre d'affaires, et 539 articles représentent 80 % des quantités vendues. Les taux de marge moyens atteignent leurs sommets sur les spiritueux, notamment le Cognac (82,32 %) et le Whisky (81,74 %).",
+          "**Insights Commerciaux :** L'étude des corrélations a montré que les produits moins chers se vendent légèrement plus. Bien que les produits les plus vendus soient généralement ceux avec le plus grand stock, cette gestion reste perfectible car il n'y a pas de corrélation globale stricte entre le prix et la quantité stockée.",
+          "**Recommandations Data :** Pour garantir la qualité future des données, il a été conseillé au CODIR d'implémenter des validations à la saisie (interdiction des prix/stocks négatifs et des marges négatives), d'automatiser le calcul du statut de stock (`stock_status`), de normaliser le format des SKU, et de filtrer les imports pour éviter les doublons."
+        ]
+      },
+      "limites": {
+        "title": "5. Limites et prochaines pistes",
+        "intro": "Bien que le nettoyage ait permis de restaurer la fiabilité des données et d'extraire des indicateurs de performance, le processus de traitement actuel reste vulnérable sur le long terme :",
+        "items": [
+          "**Limites :** L'analyse repose sur des extractions manuelles statiques (fichiers plats) arrêtées à un instant T. Cette absence d'historique empêche toute analyse de saisonnalité, pourtant cruciale dans le secteur des vins et spiritueux (foires aux vins, fêtes de fin d'année). De plus, l'utilisation d'une table de liaison Excel manuelle entre l'ERP et le CMS e-commerce constitue un risque majeur d'erreur humaine continue.",
+          "**Prochaines pistes :** L'urgence technique serait de remplacer ces exports manuels par des flux de données automatisés via des API entre l'ERP et le site web. Sur le plan analytique, l'intégration de données historiques permettrait de modéliser la saisonnalité des ventes (Time Series) afin d'optimiser les réapprovisionnements et d'éviter l'immobilisation financière liée au surstockage."
+        ]
+      }
+    }
+  },
+  {
+    "id": "6",
+    "title": "Tableau de bord décisionnel et pilotage avec Power BI",
+    "description": "Cadrage du besoin métier, préparation des données via Power Query (ETL) et création d'un tableau de bord interactif sous Power BI pour le suivi de projets.",
+    "image": "projects/projet6.jpeg",
+    "tools": [
+      "Power BI",
+      "Power Query",
+      "DAX",
+      "Product Strategy Canvas"
+    ],
+    "details": {
+      "context": {
+        "title": "1. Contexte et besoin métier",
+        "intro": "Ce projet a été réalisé pour Sanitoral, une société internationale spécialisée dans les soins bucco-dentaires. Le service Project Management Office (PMO) souhaitait un outil de pilotage dynamique pour suivre ses projets. La mission a débuté par un cadrage rigoureux :",
+        "items": [
+          "**Product Strategy Canvas :** Définition des \"User Stories\" pour répondre aux besoins spécifiques de trois niveaux de management (Directeur Général, Directeur de région, Directeur pays).",
+          "**Objectifs fonctionnels :** Suivre l'avancement global, identifier rapidement les retards et les dépassements de coûts, et permettre des prises de décision stratégiques."
+        ]
+      },
+      "data": {
+        "title": "2. Données : sources et préparation (ETL)",
+        "text": "Les données ont été extraites du logiciel de gestion de projets de l'entreprise, couvrant l'historique de 2018 à début 2022. Pour garantir une mise à jour hebdomadaire autonome par le client, le processus de nettoyage a été entièrement automatisé via Power Query Editor. Les étapes appliquées incluent la suppression des lignes vides, la promotion des en-têtes, la modification des types de données et la création de colonnes personnalisées (comme la clé de concaténation `Project_phase` liant l'ID du projet et la phase)."
+      },
+      "methodology": {
+        "title": "3. Démarche et outils",
+        "items": [
+          "**Modélisation des données :** Création d'un modèle relationnel optimisé liant les tables de faits (coûts, livrables, durée) aux tables de dimensions (projets, géographie, dates) au sein de Power BI.",
+          "**Formules DAX :** Création de mesures personnalisées pour calculer les écarts de performance, les dépassements de budget et mettre en évidence les retards d'avancement.",
+          "**Ergonomie et Rôles :** Conception d'une interface unique avec des filtres dynamiques permettant à chaque utilisateur (Global, Régional, Pays) de n'afficher que les informations pertinentes pour son périmètre d'action."
+        ]
+      },
+      "results": {
+        "title": "4. Résultats et recommandations",
+        "intro": "Le livrable final est un fichier Power BI (.pbix) complet et interactif, pensé pour faciliter le pilotage. Il inclut :",
+        "items": [
+          "**Vue stratégique :** Des visualisations adaptées (notamment l'intégration d'un diagramme de Gantt) permettant aux directeurs d'intervenir au plus tôt en cas de dérive.",
+          "**Documentation intégrée :** Un onglet dédié dans le rapport explique le Product Strategy Canvas, le modèle de données relationnel et la procédure pas à pas de mise à jour pour garantir l'autonomie des équipes PMO.",
+          "**Storytelling :** La restitution finale a été construite autour d'un discours orienté métier, traduisant les indicateurs techniques en véritables axes d'amélioration stratégiques."
+        ]
+      },
+      "limites": {
+        "title": "5. Limites et prochaines pistes",
+        "intro": "Bien que ce tableau de bord offre une visibilité inédite au PMO et réponde aux exigences du Product Strategy Canvas, son mode de distribution actuel présente des limites pour un usage à grande échelle :",
+        "items": [
+          "**Limites :** Le livrable sous forme de fichier local (.pbix) oblige le client à réaliser une actualisation manuelle. De plus, bien que l'ergonomie propose des filtres par profil (Global, Régional, Pays), la sécurité n'est pas structurellement garantie : un directeur pays pourrait techniquement modifier les filtres pour accéder aux données budgétaires d'une autre région.",
+          "**Prochaines pistes :** Pour un déploiement sécurisé en entreprise, il est recommandé de publier le rapport sur **Power BI Service**. Cela permettrait, d'une part, de configurer une passerelle de données (Data Gateway) pour des actualisations automatiques quotidiennes, et d'autre part, d'implémenter le **Row-Level Security (RLS)** pour restreindre stricto sensu l'accès aux données selon l'identifiant de connexion de l'utilisateur."
+        ]
+      }
+    }
+  },
+  {
+    "id": "7",
+    "title": "Déploiement d'un pipeline de données avec dbt et Snowflake",
+    "description": "Conception d'un workflow de transformation de données automatisé et testé avec dbt et Snowflake. Enrichissement Open Data (INSEE) pour la réalisation d'une analyse sociodémographique.",
+    "image": "projects/projet7.jpeg",
+    "github": "https://github.com/cgwena/data_dbt_OC_profil_sd",
+    "tools": [
+      "dbt",
+      "Snowflake",
+      "SQL",
+      "Open Data (INSEE)"
+    ],
+    "details": {
+      "context": {
+        "title": "1. Contexte et besoin métier",
+        "intro": "En tant que Data Analyst junior chez OpenClassrooms, la mission consistait à analyser l'évolution du profil sociodémographique des étudiants de la filière Data sur 4 ans (2022-2025). L'objectif était d'alimenter les réflexions stratégiques de la direction pédagogique sur l'accessibilité et l'égalité des chances.",
+        "items": [
+          "**Analyse des tendances :** Objectiver la répartition des étudiants par âge, genre et région.",
+          "**Enrichissement :** Comparer le profil des étudiants avec la population française globale à l'aide de données publiques pour contextualiser les résultats."
+        ]
+      },
+      "data": {
+        "title": "2. Données : sources et conformité",
+        "text": "Le projet a nécessité l'exploitation de données internes d'OpenClassrooms croisées avec des données externes publiques de l'INSEE portant sur le chômage (par âge, genre et région). Une attention particulière a été portée au respect strict du RGPD en garantissant l'absence totale de données nominatives à chaque étape du traitement."
+      },
+      "methodology": {
+        "title": "3. Démarche et outils",
+        "items": [
+          "**Architecture dbt & Snowflake :** Création d'un pipeline de transformation complet et modulaire (dossiers staging, intermediate et marts) aboutissant à une table analytique finale `dim_students`.",
+          "**Nettoyage et standardisation :** Traitement des données via SQL, incluant la création de macros pour nettoyer les accents et l'utilisation de requêtes conditionnelles (`case when`) pour aligner les tranches d'âge internes sur la nomenclature de l'INSEE.",
+          "**Qualité et Documentation :** Implémentation de tests de qualité automatisés (valeurs uniques, non nulles, valeurs acceptées) et documentation rigoureuse via des fichiers `.yml` pour assurer la fiabilité et la reproductibilité du pipeline."
+        ]
+      },
+      "results": {
+        "title": "4. Résultats et recommandations",
+        "intro": "L'analyse comparative entre les données internes et les statistiques de l'INSEE a révélé plusieurs axes de réflexion concernant l'égalité des chances :",
+        "items": [
+          "**Profil type :** La grande majorité des étudiants sont des hommes de 25 à 49 ans (représentant 85 % des effectifs) en reconversion, résidant principalement en Île-de-France.",
+          "**Disparité de genre :** Bien que le taux de chômage national soit quasiment identique selon le genre, les femmes ne représentent qu'environ 30 % des inscrits (un chiffre stable sur 4 ans).",
+          "**Disparités d'âge et géographiques :** Les 15-24 ans ont un taux de chômage environ 3 fois supérieur à la moyenne mais ne représentent que 4 % des étudiants. De même, les DROM affichent un chômage 2 fois plus élevé pour moins de 4 % des effectifs globaux.",
+          "**Recommandation stratégique :** Ces résultats mettent en évidence la nécessité de renforcer les actions d'accessibilité pour cibler davantage les populations les plus touchées par le chômage (femmes, jeunes, résidents des DROM)."
+        ]
+      },
+      "limites": {
+        "title": "5. Limites et prochaines pistes",
+        "intro": "Bien que le pipeline de données repose sur des standards modernes et robustes (Modern Data Stack), l'analyse sociodémographique actuelle comporte certaines limites d'interprétation :",
+        "items": [
+          "**Limites :** L'analyse se concentre uniquement sur les flux d'entrants (les inscriptions). Elle ne prend pas en compte le taux d'abandon, le temps de complétion ou l'obtention finale du diplôme. Par ailleurs, la comparaison avec l'INSEE reste macroscopique : le taux de chômage général ne reflète pas nécessairement l'appétence ou les prérequis (par exemple, le niveau d'études initial) nécessaires pour s'orienter vers une filière Data.",
+          "**Prochaines pistes :** Analytiquement, il serait crucial de croiser ces données démographiques avec les métriques de réussite pédagogique pour vérifier si les publics minorisés (femmes, jeunes) diplôment dans les mêmes proportions. Techniquement, pour parfaire le pipeline dbt, il serait pertinent d'intégrer un orchestrateur (comme Apache Airflow ou Dagster) afin d'automatiser le déclenchement des transformations à chaque nouvelle cohorte d'étudiants."
+        ]
+      }
+    }
+  },
+  {
+    "id": "8",
+    "title": "Analyse statistique et stratégique e-commerce avec R",
+    "description": "Audit des ventes e-commerce et analyse des comportements clients avec R. Réalisation de tests statistiques avancés et traduction en recommandations stratégiques pour le CODIR.",
+    "image": "projects/projet8.jpeg",
+    "tools": [
+      "R",
+      "Statistiques inférentielles",
+      "Tests d'hypothèses",
+      "Data Visualisation"
+    ],
+    "details": {
+      "context": {
+        "title": "1. Contexte et besoin métier",
+        "intro": "La mission a été menée pour Lapage, une librairie originellement physique ayant ouvert un site de vente en ligne il y a deux ans. L'objectif était de fournir une analyse stratégique en 15 minutes pour le CODIR (Comité de Direction) afin d'orienter les futures décisions commerciales (offres, ciblages, prix).",
+        "items": [
+          "**Analyse globale des ventes :** Évaluer les indicateurs de performance récents et l'évolution temporelle de l'activité.",
+          "**Analyse des comportements clients :** Comprendre les habitudes d'achat en ligne pour les comparer à la connaissance acquise en boutique physique."
+        ]
+      },
+      "data": {
+        "title": "2. Données : sources et périmètre",
+        "text": "L'analyse a porté sur l'historique des ventes couvrant une période de deux ans, de mars 2021 à février 2023, représentant un chiffre d'affaires total de 12 027 663 €. Les données englobaient des informations sur le profil des clients (âge, genre) et les produits, qui étaient répartis en trois catégories distinctes (0, 1 et 2)."
+      },
+      "methodology": {
+        "title": "3. Démarche et outils",
+        "items": [
+          "**Traitement et DataViz (R) :** Nettoyage des données et génération de graphiques (courbes d'évolution, boxplots, nuages de points hexagonaux) pour visualiser la répartition des ventes.",
+          "**Statistiques descriptives :** Calcul des moyennes mobiles sur 3 mois pour lisser l'évolution du chiffre d'affaires et réalisation de courbes de Lorenz pour analyser la concentration du CA.",
+          "**Tests statistiques inférentiels :** Utilisation de tests mathématiques rigoureux pour prouver les corrélations : test du Chi-2 (lien entre genre et catégorie), test de Spearman (âge vs fréquence/montant d'achat), et test non paramétrique de Kruskal-Wallis (âge vs catégorie achetée)."
+        ]
+      },
+      "results": {
+        "title": "4. Résultats et recommandations",
+        "intro": "La traduction des résultats mathématiques en recommandations actionnables a permis de distinguer deux types de clientèle et de tirer des conclusions claires pour le CODIR :",
+        "items": [
+          "**Analyse B2B vs B2C :** L'étude de la concentration du CA a mis en évidence une forte disparité, avec 4 clients majeurs (B2B) générant une proportion très significative du revenu global.",
+          "**Dynamique des catégories :** La catégorie 1 génère le plus gros volume de CA (plus de 4 millions d'euros), tandis que la catégorie 2 regroupe des produits avec un prix médian nettement supérieur.",
+          "**Comportement par âge :** Les tests de Kruskal-Wallis et Spearman ont prouvé statistiquement l'influence de l'âge. Les jeunes clients (autour de 20-30 ans) ont un panier moyen plus élevé et consomment majoritairement la catégorie 2, tandis que les clients plus âgés achètent plus fréquemment mais avec de plus petits paniers (catégorie 0)."
+        ]
+      },
+      "limites": {
+        "title": "5. Limites et prochaines pistes",
+        "intro": "L'utilisation de tests statistiques rigoureux a permis de valider objectivement les intuitions métiers. Néanmoins, l'analyse stratégique pourrait être affinée en dépassant les contraintes du jeu de données actuel :",
+        "items": [
+          "**Limites :** L'anonymisation des produits sous forme de \"catégories (0, 1, 2)\" restreint la portée des recommandations commerciales. Par ailleurs, la distinction entre clients professionnels (B2B) et particuliers (B2C) a dû être déduite statistiquement (suite à la découverte d'outliers majeurs dans la courbe de Lorenz), car elle n'est pas nativement structurée dans la base de données de l'entreprise.",
+          "**Prochaines pistes :** Il serait hautement stratégique de mettre en place une véritable segmentation CRM (tag B2B/B2C) dès la création du compte client pour proposer des parcours d'achat et des tarifications différenciés. De plus, croiser ces données transactionnelles avec des données de web analytics (taux d'abandon de panier, provenance du trafic) permettrait d'optimiser les campagnes d'acquisition pour cibler la clientèle jeune, très friande de la catégorie 2."
+        ]
+      }
+    }
+  },
+  {
+    "id": "9",
+    "title": "Observatoire des réussites éducatives : Data Visualisation et UX",
+    "description": "Préparation de données Open Data (Python/Power Query) et création d'un tableau de bord interactif sous Power BI pour analyser les dynamiques scolaires (évaluations CM1 et IPS).",
+    "image": "projects/projet9.jpeg",
+    "tools": [
+      "Python",
+      "Power BI",
+      "Power Query",
+      "Open Data"
+    ],
+    "details": {
+      "context": {
+        "title": "1. Contexte et besoin métier",
+        "intro": "Réalisé dans le cadre d'un projet libre, ce travail vise à concevoir un « Observatoire des Réussites Éducatives ». L'objectif principal est d'analyser l'impact des facteurs socio-économiques sur les résultats scolaires des élèves de CM1. Ce projet se structure autour des besoins suivants :",
+        "items": [
+          "**Création d'un outil de diagnostic :** Proposer un tableau de bord analytique multi-niveaux (National, Circonscription, Commune/École) pour les acteurs de l'éducation.",
+          "**Analyse des disparités :** Vérifier les corrélations entre la réussite scolaire et le milieu social, le secteur (public/privé), ou le zonage (REP/REP+)."
+        ]
+      },
+      "data": {
+        "title": "2. Données : sources et qualité",
+        "text": "Les données exploitées proviennent de l'Open Data du Ministère de l'Éducation Nationale. Trois jeux de données massifs ont été croisés : les effectifs par école (plus de 800 000 lignes), l'Indice de Position Sociale ou IPS (97 000 lignes) et les résultats des évaluations nationales Repères CM1 (15 000 lignes). Afin de respecter strictement le RGPD et la confidentialité des élèves, un script Python a été développé pour générer des données fictives (mock data) pour la circonscription « Le Mans Sud », en simulant des scores d'évaluations corrélés de façon réaliste à l'IPS réel de chaque école."
+      },
+      "methodology": {
+        "title": "3. Démarche et outils",
+        "items": [
+          "**Prétraitement hybride :** Utilisation d'un Notebook Python pour la suppression des colonnes inutiles, l'harmonisation des formats et la conversion des valeurs textuelles (comme « NS ») en données numériques, complété par Power Query pour la création de clés composites.",
+          "**Architecture et UX (Blueprint) :** Définition préalable des visualisations (cartes, nuages de points, graphiques en courbes, jauges) en fonction du niveau d'analyse souhaité, garantissant une navigation intuitive.",
+          "**Développement Power BI :** Intégration de filtres croisés, de mesures DAX dynamiques et d'un système de navigation de type « drill-through » pour explorer la donnée de la région jusqu'à la classe."
+        ]
+      },
+      "results": {
+        "title": "4. Résultats et recommandations",
+        "intro": "Le tableau de bord final offre un panorama global et détaillé des dynamiques scolaires :",
+        "items": [
+          "**Corrélation socio-économique :** Les nuages de points mettent en évidence une corrélation forte et claire entre l'augmentation de l'IPS d'un département et la hausse du taux de maîtrise des compétences en français et en mathématiques.",
+          "**Diagnostic territorial :** Les cartes interactives et les graphiques en barres permettent d'identifier instantanément les écarts de réussite entre le secteur privé et public, ainsi que les disparités de genre selon les matières.",
+          "**Outil d'action pédagogique :** La vue granulaire par école permet aux équipes éducatives d'identifier précisément les compétences (ex: « Résoudre des problèmes », « Orthographe ») classées « à besoin », « fragile » ou « satisfaisant », facilitant ainsi la mise en place d'actions ciblées."
+        ]
+      },
+      "limites": {
+        "title": "5. Limites et prochaines pistes",
+        "intro": "Bien que ce tableau de bord démontre le potentiel de la Data Visualisation pour le pilotage éducatif, l'utilisation de données ouvertes impose certaines restrictions analytiques :",
+        "items": [
+          "**Limites :** Pour des raisons strictes de confidentialité, la vue granulaire (à l'échelle de l'école) repose sur des données générées en Python. Bien que statistiquement réalistes, ces données fictives empêchent toute prise de décision locale réelle. Par ailleurs, les évaluations nationales offrent une photographie diagnostique à un instant T (en début d'année) : elles illustrent le niveau d'entrée mais ne mesurent pas la progression réelle des élèves au fil des mois (la valeur ajoutée ou l'« effet établissement »).",
+          "**Prochaines pistes :** Pour transformer ce prototype en un véritable outil de pilotage opérationnel, il faudrait l'interfacer de manière sécurisée avec les bases de données internes des écoles (comme ONDE), en appliquant une anonymisation à la source. Analytiquement, l'intégration de données longitudinales (suivi des cohortes du CP au CM2) permettrait d'évaluer concrètement l'impact des actions pédagogiques au-delà du déterminisme social mesuré par l'IPS."
+        ]
+      }
+    }
+  },
+  {
+    "id": "10",
+    "title": "Machine Learning et analyse stratégique à l'international",
+    "description": "Sourcing de données macro-économiques (Open Data) et application d'algorithmes de Machine Learning non supervisé en Python pour identifier de nouveaux marchés à l'export.",
+    "image": "projects/projet10.jpeg",
+    "tools": [
+      "Python",
+      "Scikit-learn",
+      "SciPy",
+      "Machine Learning non supervisé"
+    ],
+    "details": {
+      "context": {
+        "title": "1. Contexte et besoin métier",
+        "intro": "Cette mission a été réalisée pour « La poule qui chante », une entreprise d'agroalimentaire française spécialisée dans le poulet bio. L'objectif principal était de préparer une présentation stratégique pour le COMEX afin d'orienter le développement à l'international.",
+        "items": [
+          "**Ciblage de marché :** Analyser les marchés mondiaux pour passer de 200 pays potentiels à 3 cibles principales d'exportation.",
+          "**Vulgarisation :** Présenter les recommandations et la méthodologie analytique de manière accessible pour un public décisionnaire non technique."
+        ]
+      },
+      "data": {
+        "title": "2. Données : sources et préparation",
+        "text": "L'analyse repose sur des données fiables issues de l'Open Data, principalement la FAO (Food and Agriculture Organization) et la Banque Mondiale. Le traitement a inclus le nettoyage, l'uniformisation des codes pays pour la fusion des bases, et une phase de « feature engineering » pour créer de nouveaux indicateurs (évolution de la population, taux de dépendance aux importations et exportations)."
+      },
+      "methodology": {
+        "title": "3. Démarche et outils",
+        "items": [
+          "**Définition des critères :** Sélection de variables basées sur 4 grands axes (Démographie, Économie, Marché de la volaille, Environnement/Risques incluant la logistique et les douanes).",
+          "**Réduction de dimensionnalité (ACP) :** Réalisation d'une Analyse en Composantes Principales pour interpréter les corrélations (ex: l'axe F1 représente la stabilité et maturité économique, l'axe F2 le volume et la population).",
+          "**Clustering :** Utilisation d'une Classification Hiérarchique Ascendante (analyse du dendrogramme) pour définir une coupure optimale à 5 clusters, suivie de l'algorithme K-Means pour affecter chaque pays."
+        ]
+      },
+      "results": {
+        "title": "4. Résultats et recommandations",
+        "intro": "La modélisation a permis de regrouper les 200 pays individuels en 5 grandes familles de marchés distinctes :",
+        "items": [
+          "**Identification du cluster cible :** Le Cluster 4 a été formellement identifié comme regroupant les meilleures opportunités d'exportation.",
+          "**Portrait-robot du marché idéal :** Ce groupe stratégique se caractérise par le PIB par habitant le plus élevé, un excellent indice logistique, et un profil de pays importateurs de volaille.",
+          "**Recommandation finale :** Un « Top 5 » des pays cibles a été extrait de ce cluster spécifique et proposé au COMEX pour initier l'étude de marché approfondie."
+        ]
+      },
+      "limites": {
+        "title": "5. Limites et prochaines pistes",
+        "intro": "Bien que les algorithmes de Machine Learning aient permis de dégager une tendance macro-économique claire à partir de données massives, cette modélisation présente des biais inhérents à sa granularité :",
+        "items": [
+          "**Limites :** Le modèle repose sur des données mondiales génériques qui mesurent les volumes de \"volaille\" au sens large. Or, l'entreprise se positionne sur une niche premium (le poulet bio). Un pays important massivement de la volaille de batterie à très bas coût ressortira positivement dans notre cluster, sans pour autant être un marché viable pour du bio. De plus, les données macro-économiques ne captent pas les barrières non tarifaires (embargos sanitaires en cours, normes d'importation).",
+          "**Prochaines pistes :** Le filtre macro-économique quantitatif étant validé, la prochaine étape indispensable est de mener une étude micro-économique et qualitative sur le Top 5 identifié. Il conviendra d'enrichir l'analyse avec des données locales spécifiques : taille du marché du bio, habitudes culinaires, concurrence locale sur le segment premium, et analyse de la réglementation douanière spécifique à chaque pays."
+        ]
+      }
+    }
+  },
+  {
+    "id": "11",
+    "title": "Détection de fraude par Machine Learning prédictif",
+    "description": "Entraînement de modèles de Machine Learning (supervisé et non supervisé) pour la détection de faux billets et déploiement du meilleur algorithme sous forme de script automatisé.",
+    "image": "projects/projet11.jpeg",
+    "tools": [
+      "Python",
+      "Scikit-learn",
+      "Machine Learning",
+      "Déploiement de modèle"
+    ],
+    "details": {
+      "context": {
+        "title": "1. Contexte et besoin métier",
+        "intro": "Cette mission a été réalisée pour l’Organisation nationale de lutte contre le faux-monnayage (ONCFM) en tant que Senior Data Analyst. L'objectif était d'accélérer la lutte contre la contrefaçon grâce à l'intelligence artificielle.",
+        "items": [
+          "**Création d'un outil prédictif :** Développer une application de Machine Learning capable de prédire la nature d'un billet (vrai ou faux) à partir de ses dimensions géométriques scannées (longueur, hauteur, marges, etc.).",
+          "**Déploiement :** Livrer une application fonctionnelle sous forme de script Python automatisé pour pouvoir être utilisée de façon autonome par les équipes de l'ONCFM."
+        ]
+      },
+      "data": {
+        "title": "2. Données : sources et préparation",
+        "text": "Le jeu de données initial était composé de 1 500 billets préalablement scannés et labellisés (1 000 vrais et 500 faux). La phase de préparation a nécessité une gestion minutieuse des données manquantes (imputation) et la mise à l'échelle des données (standardisation centrée autour de zéro) afin de s'assurer que toutes les dimensions géométriques aient le même poids lors de la modélisation."
+      },
+      "methodology": {
+        "title": "3. Démarche et outils",
+        "items": [
+          "**Analyse exploratoire :** Étude des distributions des variables (diagonale, hauteurs gauche/droite, marges haute/basse, longueur) à l'aide de boxplots pour identifier visuellement les facteurs discriminants.",
+          "**Modélisation multi-algorithmes :** Entraînement et comparaison de 6 algorithmes de Machine Learning, supervisés et non supervisés : Régression Logistique, K-Means, KNN (K-Nearest Neighbors), Arbre de décision, Forêt Aléatoire (Random Forest) et Gradient Boosting.",
+          "**Évaluation :** Utilisation de matrices de confusion et de scores d'exactitude (accuracy) sur un jeu de test pour mesurer rigoureusement les performances de chaque modèle."
+        ]
+      },
+      "results": {
+        "title": "4. Résultats et recommandations",
+        "intro": "L'ensemble des modèles a affiché d'excellents résultats, avec des scores d'exactitude variant de 97,67 % (Arbre de décision) à plus de 99 % :",
+        "items": [
+          "**Choix du modèle :** La Régression Logistique a été retenue comme modèle final, offrant la meilleure performance avec un score d'exactitude de 99,67 % (une seule erreur de prédiction sur le jeu de test).",
+          "**Script de production :** L'algorithme sélectionné a été packagé dans un script Python autonome (`verifier_billets`).",
+          "**Fonctionnement de l'application :** Ce script charge le modèle et les paramètres de transformation pré-entraînés, traite un nouveau fichier CSV de mensurations, et génère automatiquement un fichier de résultats incluant la prédiction finale (Vrai/Faux) et sa probabilité."
+        ]
+      },
+      "limites": {
+        "title": "5. Limites et prochaines pistes",
+        "intro": "Bien que le modèle de Régression Logistique offre des performances quasi parfaites sur le jeu de test, le déploiement d'un tel outil dans un contexte de lutte anti-fraude réel soulève des défis d'évolutivité et d'usage :",
+        "items": [
+          "**Limites :** Le jeu de données d'entraînement (1 500 billets) est relativement restreint. De plus, les techniques de contrefaçon évoluent en permanence : un modèle entraîné sur des données statiques risque de perdre en précision face à de nouvelles méthodes d'impression (phénomène de *Data Drift*). Sur le plan opérationnel, l'utilisation d'un script Python en local exige que les agents manipulent manuellement des fichiers CSV, ce qui n'est pas optimal sur le terrain.",
+          "**Prochaines pistes :** Pour industrialiser la solution, il serait pertinent de déployer le modèle sous forme d'API (avec FastAPI par exemple), accessible via une interface web ou mobile simple pour les agents de terrain. Enfin, il faudrait mettre en place un pipeline de ré-entraînement continu (approche MLOps) pour alimenter régulièrement la base de données avec les mensurations des nouveaux faux billets saisis, garantissant ainsi la pérennité de l'algorithme."
+        ]
+      }
+    }
   }
 ]
 >>>>>>> main

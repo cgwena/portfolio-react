@@ -1,6 +1,4 @@
 import React from 'react'
-import ReactPlayer from 'react-player'
-
 import styles from "./About.module.css"
 
 export const About = () => {
