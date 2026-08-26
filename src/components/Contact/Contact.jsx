@@ -11,8 +11,8 @@ export const Contact = () => {
             
             {/* Le rappel du bouton CV */}
             <a 
-                href="/CV_Gwenaelle_Bousses.pdf" 
-                download="CV_Gwenaelle_Bousses.pdf" 
+                href="public/CV_Bousses_Gwenaelle_data_analyst.pdf" 
+                download="CV_Bousses_Gwenaelle_data_analyst.pdf" 
                 className={styles.cvButtonFooter}
             >
                 Télécharger mon CV
