@@ -20,7 +20,7 @@ export const Hero = () => {
 
                 <div className={styles.actionContainer}>
                     <a
-                        href="public/CV_Bousses_Gwenaelle_data_analyst.pdf"
+                        href="CV_Bousses_Gwenaelle_data_analyst.pdf"
                         download="CV_Bousses_Gwenaelle_data_analyst.pdf"
                         className={styles.cvButton}
                     >
