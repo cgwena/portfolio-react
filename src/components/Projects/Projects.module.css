@@ -80,7 +80,7 @@
 }
 
 .projectDescription {
-    color: #cccccc;
+    color: var(--color-text);
     font-size: 16px;
     font-family: var(--font-roboto);
     margin-bottom: 20px;
@@ -89,9 +89,8 @@
     transition: transform 0.4s ease;
 }
 
-.card:hover .projectTitle,
-.card:hover .projectDescription {
-    transform: translateY(0);
+.card:hover .projectTitle {
+    transform : translateY(0);
 }
 
 .tools {

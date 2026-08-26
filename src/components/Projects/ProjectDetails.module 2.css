@@ -41,14 +41,12 @@
 /* Les petits badges d'outils sous le titre */
 .toolsContainer {
     display: flex;
-    
     gap: 12px;
     flex-wrap: wrap;
     margin-bottom: 40px;
 }
 
 .toolBadge {
-    border: 1px solid var(--color-text);
     background: rgba(255, 255, 255, 0.1);
     color: var(--color-text);
     padding: 6px 14px;
@@ -88,16 +86,6 @@
     padding-bottom: 10px;
 }
 
-.sectionDescription {
-    color: var(--color-text);
-    font-size: 24px;
-    font-family: var(--font-roboto);
-    margin-bottom: 56px;
-    max-width: 80%;
-    transform: translateY(20px);
-    transition: transform 0.4s ease;
-}
-
 .sectionText {
     color: var(--color-text);
     font-family: var(--font-roboto);
@@ -121,31 +109,4 @@
         font-size: 16px;
         text-align: left; /* On enlève le justifié sur mobile */
     }
-}
-
-/* Conteneur pour les boutons de liens */
-.linksContainer {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-}
-
-/* Style du bouton GitHub */
-.actionButton {
-    display: inline-block;
-    background-color: var(--color-text); /* Le bouton prend la couleur de votre texte (souvent blanc ou sombre selon le thème) */
-    color: var(--color-bg); /* Le texte prend la couleur du fond pour faire un effet "inversé" élégant */
-    padding: 12px 24px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-family: var(--font-roboto);
-    font-size: 16px;
-    font-weight: 600;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.actionButton:hover {
-    transform: translateY(-2px); /* Petit effet de soulèvement au survol */
-    opacity: 0.9;
 }
