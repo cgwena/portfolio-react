@@ -30,52 +30,13 @@ export const ProjectDetails = () => {
             <Link to="/" className={styles.backButton}>← Retour au portfolio</Link>
             
             <h1 className={styles.title}>{project.title}</h1>
-            <h3 className={styles.sectionDescription}>{project.description}</h3>
+            
             <div className={styles.toolsContainer}>
                 {project.tools.map((tool, index) => (
                     <span key={index} className={styles.toolBadge}>{tool}</span>
                 ))}
             </div>
-                {(project.github || project.demo) && (
-                <div className={styles.linksContainer}>
-                    {project.github && (
-                        <a 
-                            href={project.github} 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            className={styles.actionButton}
-                        >
-                            Voir le code sur GitHub
-                        </a>
-                    )}
 
-                    {project.presentation && (
-                        <a 
-                            href={project.presentation} 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            className={styles.actionButton}
-                            style={{ backgroundColor: 'transparent', border: '1px solid var(--color-text)', color: 'var(--color-text)' }}
-                        >
-                            Voir la présentation
-                        </a>
-                    )}
-                    
-                    {/* J'ai anticipé un bouton "Démo" au cas où vous auriez un site web ou un dashboard Power BI en ligne ! */}
-                    {project.demo && (
-                        <a 
-                            href={project.demo} 
-                            target="_blank" 
-                            rel="noopener noreferrer" 
-                            className={styles.actionButton}
-                            style={{ backgroundColor: 'transparent', border: '1px solid var(--color-text)', color: 'var(--color-text)' }}
-                        >
-                            Voir le projet en ligne
-                        </a>
-                    )}
-                </div>
-            )}
-            
             <img 
                 className={styles.bannerImage} 
                 src={getImageUrl(project.image)} 

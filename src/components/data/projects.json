@@ -4,6 +4,8 @@
     "title": "Analyse stratégique et Data Visualisation",
     "description": "Analyse stratégique des ventes avec présentation orientée storytelling pour la direction. Conception d'un tableau de bord opérationnel, dynamique et accessible pour le suivi client.",
     "image": "projects/projet1.jpeg",
+    "github": "https://github.com/cgwena/data_analyse_ventes_ecommerce",
+    "presentation": "/presentations/projet1.pdf",
     "tools": [
       "Excel",
       "PowerPoint"
@@ -51,6 +53,8 @@
     "title": "Conception de base de données et analyse SQL",
     "description": "Modélisation et implémentation d'une base de données relationnelle pour le secteur de l'assurance. Analyse du marché via la rédaction de requêtes SQL complexes.",
     "image": "projects/projet2.jpeg",
+    "github": "https://github.com/cgwena/data_requete_bdd/tree/main ",
+    "presentation": "/presentations/projet2.pdf",
     "tools": [
       "SQL",
       "MySQL Workbench",
@@ -102,6 +106,8 @@
     "title": "Analyse exploratoire de données avec Python",
     "description": "Nettoyage, manipulation et analyse exploratoire de données sur la sous-nutrition mondiale. Croisement de sources complexes et data visualisation.",
     "image": "projects/projet3.jpeg",
+    "github": "https://github.com/cgwena/data_fao_analyse_python",
+    "presentation": "/presentations/projet3.pdf",
     "tools": [
       "Python",
       "Pandas",
@@ -154,6 +160,8 @@
     "title": "Conception d'une base de données immobilière et analyses SQL",
     "description": "Modélisation d'une base de données (3NF) à partir de sources Open Data et exploitation via des requêtes SQL complexes pour l'analyse du marché immobilier.",
     "image": "projects/projet4.jpeg",
+    "github": "https://github.com/cgwena/data_bdd_donnees_immobilieres",
+    "presentation": "/presentations/projet4.pdf",
     "tools": [
       "SQL",
       "Modélisation 3NF",
@@ -205,6 +213,8 @@
     "title": "Nettoyage de données et analyse statistique",
     "description": "Rapprochement de bases de données hétérogènes (ERP et E-commerce), nettoyage approfondi avec Python et analyse statistique des ventes (Pareto, détection d'outliers).",
     "image": "projects/projet5.jpeg",
+    "github": "https://github.com/cgwena/data_analyse_donnees_ecommerce",
+    "presentation": "/presentations/projet5.pdf",
     "tools": [
       "Python",
       "Pandas",
@@ -257,6 +267,8 @@
     "title": "Tableau de bord décisionnel et pilotage avec Power BI",
     "description": "Cadrage du besoin métier, préparation des données via Power Query (ETL) et création d'un tableau de bord interactif sous Power BI pour le suivi de projets.",
     "image": "projects/projet6.jpeg",
+    "github": "https://github.com/cgwena/data_powerbi_dashboard",
+    "presentation": "/presentations/projet6.pdf",
     "tools": [
       "Power BI",
       "Power Query",
@@ -309,6 +321,7 @@
     "description": "Conception d'un workflow de transformation de données automatisé et testé avec dbt et Snowflake. Enrichissement Open Data (INSEE) pour la réalisation d'une analyse sociodémographique.",
     "image": "projects/projet7.jpeg",
     "github": "https://github.com/cgwena/data_dbt_OC_profil_sd",
+    "presentation": "/presentations/projet7.pdf",
     "tools": [
       "dbt",
       "Snowflake",
@@ -361,6 +374,8 @@
     "title": "Analyse statistique et stratégique e-commerce avec R",
     "description": "Audit des ventes e-commerce et analyse des comportements clients avec R. Réalisation de tests statistiques avancés et traduction en recommandations stratégiques pour le CODIR.",
     "image": "projects/projet8.jpeg",
+    "github": "https://github.com/cgwena/data_analyse_librairie_R",
+    "presentation": "/presentations/projet8.pdf",
     "tools": [
       "R",
       "Statistiques inférentielles",
@@ -412,6 +427,8 @@
     "title": "Observatoire des réussites éducatives : Data Visualisation et UX",
     "description": "Préparation de données Open Data (Python/Power Query) et création d'un tableau de bord interactif sous Power BI pour analyser les dynamiques scolaires (évaluations CM1 et IPS).",
     "image": "projects/projet9.jpeg",
+    "github": "https://github.com/cgwena/data_power_bi_reussite_educative",
+    "presentation": "/presentations/projet9.pdf",
     "tools": [
       "Python",
       "Power BI",
@@ -463,6 +480,8 @@
     "title": "Machine Learning et analyse stratégique à l'international",
     "description": "Sourcing de données macro-économiques (Open Data) et application d'algorithmes de Machine Learning non supervisé en Python pour identifier de nouveaux marchés à l'export.",
     "image": "projects/projet10.jpeg",
+    "github": "https://github.com/cgwena/data_etude_de_marche",
+    "presentation": "/presentations/projet10.pdf",
     "tools": [
       "Python",
       "Scikit-learn",
@@ -514,6 +533,8 @@
     "title": "Détection de fraude par Machine Learning prédictif",
     "description": "Entraînement de modèles de Machine Learning (supervisé et non supervisé) pour la détection de faux billets et déploiement du meilleur algorithme sous forme de script automatisé.",
     "image": "projects/projet11.jpeg",
+    "github": "https://github.com/cgwena/data_machine_learning_python",
+    "presentation": "/presentations/projet11.pdf",
     "tools": [
       "Python",
       "Scikit-learn",

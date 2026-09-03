@@ -28,7 +28,6 @@ export const Projects = () => {
 
                             <div className={styles.overlay}>
                                 <h3 className={styles.projectTitle}>{project.title}</h3>
-                                <p className={styles.projectDescription}>{project.description}</p>
                                 <div className={styles.tools}>
                                     {project.tools.map((tool, index) => (
                                         <span key={index} className={styles.toolBadge}>{tool}</span>

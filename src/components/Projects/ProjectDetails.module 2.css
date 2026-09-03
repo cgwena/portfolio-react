@@ -1,8 +1,10 @@
 @import "../../vars.css";
 
 .container {
+    /* Marge en haut pour compenser la navbar fixe */
     padding-top: 120px; 
     padding-bottom: 100px;
+    /* On centre le contenu principal et on limite sa largeur pour la lisibilité */
     max-width: 800px;
     margin: 0 auto;
     padding-left: 20px;
@@ -13,6 +15,7 @@
 
 .backButton {
     color: var(--color-text);
+    font-family: var(--font-roboto);
     text-decoration: none;
     font-size: 16px;
     opacity: 0.7;
@@ -30,25 +33,26 @@
     color: var(--color-text);
     font-size: 48px;
     font-weight: 800;
+    font-family: var(--font-roboto);
     margin-bottom: 20px;
     line-height: 1.2;
 }
 
+/* Les petits badges d'outils sous le titre */
 .toolsContainer {
     display: flex;
-    
     gap: 12px;
     flex-wrap: wrap;
     margin-bottom: 40px;
 }
 
 .toolBadge {
-    border: 1px solid var(--color-text);
     background: rgba(255, 255, 255, 0.1);
     color: var(--color-text);
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 14px;
+    font-family: var(--font-roboto);
 }
 
 .bannerImage {
@@ -64,7 +68,7 @@
 .contentWrapper {
     display: flex;
     flex-direction: column;
-    gap: 40px; 
+    gap: 40px; /* Espace entre chaque section du rapport */
 }
 
 .section {
@@ -75,51 +79,20 @@
 
 .sectionTitle {
     color: var(--color-text);
-    font-size: 20px;
+    font-size: 28px;
     font-weight: 700;
+    font-family: var(--font-roboto);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     padding-bottom: 10px;
 }
 
-.sectionDescription {
-    color: var(--color-text);
-    font-size: 20px;
-    margin-bottom: 56px;
-    max-width: 80%;
-    transform: translateY(20px);
-    transition: transform 0.4s ease;
-}
-
 .sectionText {
     color: var(--color-text);
-    font-size: 16px;
+    font-family: var(--font-roboto);
+    font-size: 18px;
     line-height: 1.8;
     opacity: 0.9;
     text-align: justify;
-}
-
-.linksContainer {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 40px;
-    flex-wrap: wrap;
-}
-
-.actionButton {
-    display: inline-block;
-    background-color: var(--color-text);
-    color: var(--color-bg); 
-    padding: 12px 24px;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    transition: transform 0.2s ease, opacity 0.2s ease;
-}
-
-.actionButton:hover {
-    transform: translateY(-2px);
-    opacity: 0.9;
 }
 
 /* RESPONSIVE */
@@ -134,6 +107,6 @@
     
     .sectionText {
         font-size: 16px;
-        text-align: left;
+        text-align: left; /* On enlève le justifié sur mobile */
     }
 }

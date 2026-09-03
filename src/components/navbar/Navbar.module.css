@@ -71,6 +71,7 @@
     .menuBtn {
         display: block;
         cursor: pointer;
+        height: 24px;
     }
 
     .menuItems {
@@ -78,8 +79,7 @@
         flex-direction: column;
         gap:12px;
         border-radius: 10px;
-        background-color: rgb(25, 55, 109);
-        background: linear-gradient(0deg, rgba(25, 55, 109, 0.2) 0%, rgba(25, 55, 109, 1) 100%);
+        background-color: var(--color-bg);
         padding: 24px 32px;
         box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
     }
