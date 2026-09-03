@@ -24,7 +24,6 @@
     gap: 0; 
 }
 
-/* La carte projet */
 .card {
     position: relative;
     width: 100%;
@@ -33,7 +32,6 @@
     background-color: var(--color-bg); /* Couleur de fond au chargement */
 }
 
-/* L'image du projet */
 .projectImage {
     width: 100%;
     height: 100%;
@@ -42,7 +40,6 @@
     transition: transform 0.4s ease; /* Pour un petit effet de zoom doux au survol */
 }
 
-/* L'overlay sombre avec le texte (caché par défaut) */
 .overlay {
     position: absolute;
     top: 0;
@@ -101,7 +98,7 @@
 }
 
 .toolBadge {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(65, 82, 72, 0.8);
     color: #fff;
     padding: 6px 12px;
     border-radius: 20px;
@@ -111,15 +108,12 @@
 
 @media screen and (max-width: 768px) {
     .grid {
-        grid-template-columns: 1fr; /* 1 seule colonne sur mobile */
+        grid-template-columns: 1fr; 
     }
     
     .overlay {
-        /* Sur mobile, il n'y a pas vraiment de "survol" (hover), 
-           on peut choisir de laisser le texte toujours un peu visible 
-           ou de compter sur le premier "tap" de l'utilisateur */
         opacity: 1;
-        background: rgba(0, 0, 0, 0.6);
+        background: rgba(0, 0, 0, 0.4);
     }
     
     .projectTitle, .projectDescription {

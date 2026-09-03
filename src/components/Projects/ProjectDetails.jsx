@@ -48,6 +48,18 @@ export const ProjectDetails = () => {
                             Voir le code sur GitHub
                         </a>
                     )}
+
+                    {project.presentation && (
+                        <a 
+                            href={project.presentation} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className={styles.actionButton}
+                            style={{ backgroundColor: 'transparent', border: '1px solid var(--color-text)', color: 'var(--color-text)' }}
+                        >
+                            Voir la présentation
+                        </a>
+                    )}
                     
                     {/* J'ai anticipé un bouton "Démo" au cas où vous auriez un site web ou un dashboard Power BI en ligne ! */}
                     {project.demo && (
